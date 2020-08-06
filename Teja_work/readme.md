@@ -3,7 +3,9 @@
 We are here with a aim of making a neural network for detection of interjections(filler words) in the speech.
 <br>
 We have opted two methods 
+<br>
 1.Prosodic - detect using speech feature alone.
+<br>
 2.Lexical - converting texttospeech and then use a NLP to detect 
 
 
