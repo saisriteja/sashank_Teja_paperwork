@@ -6,6 +6,11 @@ from keras.layers import MaxPooling2D,Bidirectional,LSTM,Reshape,CuDNNLSTM,Batch
 from keras.layers import add
 from keras.utils import plot_model
 def resnet_model():
+    ''' This model is build using keras module from the paper https://arxiv.org/pdf/1910.12590.pdf
+    inputs are to be resized of 256,256*4,1
+    output is the model
+    '''
+
     input  = Input(shape = (256,256*4,1))
 
     c1 = Conv2D(64, (7,7), padding='same',strides=2,activation='relu', kernel_initializer='he_normal')(input)
