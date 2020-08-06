@@ -10,7 +10,8 @@ We have opted two methods
 
 
 ## Prosodic:
-Pros:
+Pros:<br>
+
 1.Using this we can eliminate the troubles of miscallisifcation of text provoded by the TTS.<br>
 
 2.There are many features we can extract namely 
