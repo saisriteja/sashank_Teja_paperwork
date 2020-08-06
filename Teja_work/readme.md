@@ -11,10 +11,13 @@ We have opted two methods
 
 ## Prosodic:
 Pros:
-1.Using this we can eliminate the troubles of miscallisifcation of text provoded by the TTS.
+1.Using this we can eliminate the troubles of miscallisifcation of text provoded by the TTS.<br>
+
 2.There are many features we can extract namely 
   audio features - MFCC,LPC,LPCC,LSF,DWT,PLP
   image features - Spectrogram,MelSpectrogram,Cochleagram
+  <br>
+
 Cons:
 Training from scratch takes time and a lot of experiementations
 
