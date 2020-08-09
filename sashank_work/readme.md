@@ -1,4 +1,4 @@
-# This directory is completely about sashanks work.
+# This directory is completely about sashank's work.
 ## Grad Cam
 * Tring to implement grad cam
 * It is used to classify the important parts of the images(spectrograms)
