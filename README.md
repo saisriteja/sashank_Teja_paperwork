@@ -1,3 +1,4 @@
 # sashank_Teja_paperwork
 ## Grad Cam
-* Tried to implement grad cam
+* Tring to implement grad cam
+* It is used to classify the important parts of the images(spectrograms)
