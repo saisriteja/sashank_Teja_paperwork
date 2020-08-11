@@ -14,7 +14,7 @@ def resnet_model():
     input  = Input(shape = (256,256*4,1))
 
     c1 = Conv2D(64, (7,7), padding='same',strides=2,activation='relu', kernel_initializer='he_normal')(input)
-    a1 = Activation('relu')(c1)
+    b1 = BatchNormalization()(c1)
 
     c2 = conv1 = Conv2D(32, (3,3),strides=2, padding='same', kernel_initializer='he_normal')(input)
     b2 = BatchNormalization()(c2)
@@ -34,7 +34,7 @@ def resnet_model():
     #-----------------------------------------------layer 2----------------------------------------------------------------------------
 
     c1 = Conv2D(128, (3,3),strides=2, padding='same',activation='relu', kernel_initializer='he_normal')(a4)
-    a1 = Activation('relu')(c1)
+    b1 = BatchNormalization()(c1)
 
     c2 = conv1 = Conv2D(64, (3,3),strides=2, padding='same', kernel_initializer='he_normal')(a4)
     b2 = BatchNormalization()(c2)
@@ -54,7 +54,7 @@ def resnet_model():
     #----------------------------------------------layer 3------------------------------------------------------------------------------
 
     c1 = Conv2D(128, (3,3),strides = (1,2) ,padding='same',activation='relu', kernel_initializer='he_normal')(a4)
-    a1 = Activation('relu')(c1)
+    b1 = BatchNormalization()(c1)
 
     c2 = conv1 = Conv2D(128, (3,3),strides = (1,2), padding='same', kernel_initializer='he_normal')(a4)
     b2 = BatchNormalization()(c2)
@@ -74,7 +74,7 @@ def resnet_model():
     #-------------------------------------------layer 4---------------------------------------------------------------------------------
 
     c1 = Conv2D(64, (3,3),strides = (2,2) ,padding='same',activation='relu', kernel_initializer='he_normal')(a4)
-    a1 = Activation('relu')(c1)
+    b1 = BatchNormalization()(c1)
 
     c2 = conv1 = Conv2D(128, (3,3),strides = (2,2), padding='same', kernel_initializer='he_normal')(a4)
     b2 = BatchNormalization()(c2)
@@ -93,7 +93,7 @@ def resnet_model():
 
     #-------------------------------------------layer 5-----------------------------------------------------------------------------------
     c1 = Conv2D(32, (3,3),strides = (2,2) ,padding='same',activation='relu', kernel_initializer='he_normal')(a4)
-    a1 = Activation('relu')(c1)
+    b1 = BatchNormalization()(c1)
 
     c2 = conv1 = Conv2D(64, (3,3),strides = (2,2), padding='same', kernel_initializer='he_normal')(a4)
     b2 = BatchNormalization()(c2)
@@ -112,7 +112,7 @@ def resnet_model():
 
     #-----------------------------------------layer 6-------------------------------------------------------------------------
     c1 = Conv2D(16, (3,3),strides = (2,2) ,padding='same',activation='relu', kernel_initializer='he_normal')(a4)
-    a1 = Activation('relu')(c1)
+    b1 = BatchNormalization()(c1)
 
     c2 = conv1 = Conv2D(32, (3,3),strides = (2,2), padding='same', kernel_initializer='he_normal')(a4)
     b2 = BatchNormalization()(c2)
