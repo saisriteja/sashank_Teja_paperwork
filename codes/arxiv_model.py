@@ -27,7 +27,7 @@ def resnet_model():
     c4 = conv1 = Conv2D(64, (3,3), padding='same', kernel_initializer='he_normal')(a3)
     b4 = BatchNormalization()(c4)
 
-    m1  = add([b1, b4])
+    m1  = add([c1, b4])
     a4 = Activation('relu')(m1)
 
 
